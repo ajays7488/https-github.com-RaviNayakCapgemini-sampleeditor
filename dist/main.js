@@ -77,19 +77,18 @@ var i = 0;
 	
 for (var i in CKEDITOR.instances) {
         CKEDITOR.instances[i].on('change', function() {
-	   alert('value changed!!');
-	   alert(CKEDITOR.instances.editor1.getData());
+	  
 	   sdk.setContent(CKEDITOR.instances.editor1.getData());
-		alert(CKEDITOR.instances.editor1.setData(CKEDITOR.instances.editor1.getData()));
-		CKEDITOR.instances.editor1.setData(CKEDITOR.instances.editor1.getData());	
+			
 
 	});
 	
 	
 	
     }
-	alert(CKEDITOR.instances.editor1.setData(CKEDITOR.instances.editor1.getData()));
-	CKEDITOR.instances.editor1.setData(CKEDITOR.instances.editor1.getData());
+	CKEDITOR.instances['editor1'].setData(CKEDITOR.instances.editor1.getData());
+
+	
 	
 
 
