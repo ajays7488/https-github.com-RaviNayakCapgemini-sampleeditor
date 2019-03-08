@@ -72,18 +72,18 @@ __webpack_require__(1);
 var SDK = __webpack_require__(19);
 var sdk = new SDK();
 //var htmlData = sdk.setContent(document.getElementById("editor1").innerHTML);
-// var htmlData= sdk.setContent(CKEDITOR.instances.editor1.getData());
-// alert(htmlData);	
-// var i = 0;
+sdk.setContent(CKEDITOR.instances.editor1.getData());
+alert(sdk.setContent(CKEDITOR.instances.editor1.getData()));	
+var i = 0;
 	
-// for (var i in CKEDITOR.instances) {
-//         CKEDITOR.instances[i].on('change', function() {
+for (var i in CKEDITOR.instances) {
+        CKEDITOR.instances[i].on('change', function() {
 	  
-// 	   var changeData = sdk.setContent(CKEDITOR.instances.editor1.getData());
-// 	   alert(changeData);
+	   sdk.setContent(CKEDITOR.instances.editor1.getData());
+	   alert(sdk.setContent(CKEDITOR.instances.editor1.getData()));
 			
 
-// 	});
+	});
 	
 	
 	
@@ -105,8 +105,6 @@ var sdk = new SDK();
 // 		}
 // 		quill.on('text-change', saveText);
 // 	});
-// 	var setHtmlData = CKEDITOR.instances['editor1'].setData(CKEDITOR.instances.editor1.getData());
-// 	alert(setHtmlData);
 
 	
 	
