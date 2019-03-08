@@ -83,9 +83,11 @@ for (var i in CKEDITOR.instances) {
 	   			
 
 	});
+	
+	 CKEDITOR.instances[i].on('change', function() { CKEDITOR.instances[i].updateElement() });
     }
 	
-	  CKEDITOR.instances[i].on('change', function() { CKEDITOR.instances[i].updateElement() });
+	 
                 
 // 	sdk.getContent(function (content) {
 // 		 sdk.setContent(CKEDITOR.instances.editor1.getData());
