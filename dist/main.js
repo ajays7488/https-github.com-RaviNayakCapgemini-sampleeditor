@@ -75,14 +75,18 @@ sdk.setContent(document.getElementById("editor1").innerHTML);
 	
 var i = 0;
 	
+	
 for (var i in CKEDITOR.instances) {
         CKEDITOR.instances[i].on('change', function() {
 	  
 	   sdk.setContent(CKEDITOR.instances.editor1.getData());
-			
+	   			
 
 	});
     }
+	
+	  CKEDITOR.instances[i].on('change', function() { CKEDITOR.instances[i].updateElement() });
+                
 // 	sdk.getContent(function (content) {
 // 		 sdk.setContent(CKEDITOR.instances.editor1.getData());
 // 		CKEDITOR.instances['editor1'].setData(CKEDITOR.instances.editor1.getData())= content;
