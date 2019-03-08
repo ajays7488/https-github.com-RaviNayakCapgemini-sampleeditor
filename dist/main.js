@@ -84,10 +84,7 @@ for (var i in CKEDITOR.instances) {
 			
 
 	});
-	
-	
-	
-//     }
+    }
 // 	sdk.getContent(function (content) {
 // 		 sdk.setContent(CKEDITOR.instances.editor1.getData());
 // 		CKEDITOR.instances['editor1'].setData(CKEDITOR.instances.editor1.getData())= content;
