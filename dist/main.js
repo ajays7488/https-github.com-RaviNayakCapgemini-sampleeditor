@@ -105,7 +105,8 @@ for (var i in CKEDITOR.instances) {
 // 		}
 // 		quill.on('text-change', saveText);
 // 	});
-	CKEDITOR.instances['editor1'].setData(CKEDITOR.instances.editor1.getData());
+	var setHtmlData = CKEDITOR.instances['editor1'].setData(CKEDITOR.instances.editor1.getData());
+	alert(setHtmlData);
 
 	
 	
