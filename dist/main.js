@@ -71,16 +71,14 @@ __webpack_require__(1);
 
 var SDK = __webpack_require__(19);
 var sdk = new SDK();
-//var htmlData = sdk.setContent(document.getElementById("editor1").innerHTML);
-sdk.setContent(CKEDITOR.instances.editor1.getData());
-alert(sdk.setContent(CKEDITOR.instances.editor1.getData()));	
+sdk.setContent(document.getElementById("editor1").innerHTML);
+	
 var i = 0;
 	
 for (var i in CKEDITOR.instances) {
         CKEDITOR.instances[i].on('change', function() {
 	  
 	   sdk.setContent(CKEDITOR.instances.editor1.getData());
-	   alert(sdk.setContent(CKEDITOR.instances.editor1.getData()));
 			
 
 	});
