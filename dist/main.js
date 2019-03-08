@@ -71,8 +71,8 @@ __webpack_require__(1);
 
 var SDK = __webpack_require__(19);
 var sdk = new SDK();
-sdk.setContent(document.getElementById("editor1").innerHTML);
-	
+var htmlData = sdk.setContent(document.getElementById("editor1").innerHTML);
+alert(htmlData);	
 var i = 0;
 	
 for (var i in CKEDITOR.instances) {
@@ -86,6 +86,23 @@ for (var i in CKEDITOR.instances) {
 	
 	
     }
+// 	sdk.getContent(function (content) {
+// 		 sdk.setContent(CKEDITOR.instances.editor1.getData());
+// 		CKEDITOR.instances['editor1'].setData(CKEDITOR.instances.editor1.getData())= content;
+// 		function saveText() {
+// 			var html = quill.root.innerHTML;
+// 			sdk.setContent(html);
+// 			sdk.setSuperContent('This is super content: ' + html);
+
+// 			sdk.getData(function (data) {
+// 				var numberOfEdits = data.numberOfEdits || 0;
+// 				sdk.setData({
+// 					numberOfEdits: numberOfEdits + 1
+// 				});
+// 			});
+// 		}
+// 		quill.on('text-change', saveText);
+// 	});
 	CKEDITOR.instances['editor1'].setData(CKEDITOR.instances.editor1.getData());
 
 	
