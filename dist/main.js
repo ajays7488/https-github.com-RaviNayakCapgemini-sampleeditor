@@ -72,22 +72,22 @@ __webpack_require__(1);
 var SDK = __webpack_require__(19);
 var sdk = new SDK();
 //var htmlData = sdk.setContent(document.getElementById("editor1").innerHTML);
-var htmlData= sdk.setContent(CKEDITOR.instances.editor1.getData());
-alert(htmlData);	
-var i = 0;
+// var htmlData= sdk.setContent(CKEDITOR.instances.editor1.getData());
+// alert(htmlData);	
+// var i = 0;
 	
-for (var i in CKEDITOR.instances) {
-        CKEDITOR.instances[i].on('change', function() {
+// for (var i in CKEDITOR.instances) {
+//         CKEDITOR.instances[i].on('change', function() {
 	  
-	   var changeData = sdk.setContent(CKEDITOR.instances.editor1.getData());
-	   alert(changeData);
+// 	   var changeData = sdk.setContent(CKEDITOR.instances.editor1.getData());
+// 	   alert(changeData);
 			
 
-	});
+// 	});
 	
 	
 	
-    }
+//     }
 // 	sdk.getContent(function (content) {
 // 		 sdk.setContent(CKEDITOR.instances.editor1.getData());
 // 		CKEDITOR.instances['editor1'].setData(CKEDITOR.instances.editor1.getData())= content;
@@ -105,8 +105,8 @@ for (var i in CKEDITOR.instances) {
 // 		}
 // 		quill.on('text-change', saveText);
 // 	});
-	var setHtmlData = CKEDITOR.instances['editor1'].setData(CKEDITOR.instances.editor1.getData());
-	alert(setHtmlData);
+// 	var setHtmlData = CKEDITOR.instances['editor1'].setData(CKEDITOR.instances.editor1.getData());
+// 	alert(setHtmlData);
 
 	
 	
