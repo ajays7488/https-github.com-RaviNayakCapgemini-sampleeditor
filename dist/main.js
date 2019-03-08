@@ -79,7 +79,7 @@ var i = 0;
 for (var i in CKEDITOR.instances) {
         CKEDITOR.instances[i].on('change', function() {
 	  
-	   var changeData = sdk.setContent(CKEDITOR.instances.editor1.getData());]
+	   var changeData = sdk.setContent(CKEDITOR.instances.editor1.getData());
 	   alert(changeData);
 			
 
